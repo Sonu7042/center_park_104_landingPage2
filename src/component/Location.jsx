@@ -6,11 +6,11 @@ const defaultItems = [
   { name: "IGI Airport & Aerocity", time: "15 Mins" },
   { name: "Railway Station", time: "10 Mins" },
   { name: "Cambridge Montessori Gurgaon", time: "0 Mins" },
-  { name: "Delhi Public School Sector 103", time: "3 Mins" },
+  { name: "Delhi Public School Sector 103", time: "0 Mins" },
   { name: "Gurugram Global Heights School", time: "8 Mins" },
   { name: "Vibrant Hospital", time: "6 Mins" },
-  { name: "AIIMS Hospital", time: "30 Mins" },
-  { name: " Global City", time: "18 Mins" },
+  { name: "AIIMS Hospital", time: "15 Mins" },
+  { name: " Global City", time: "10 Mins" },
 ];
 
 function PinIcon() {

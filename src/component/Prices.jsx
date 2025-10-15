@@ -1,7 +1,7 @@
 import React from "react";
 
 const plans = [
-  { tab: "Studio", typology: "Studio", size: "966 Sqft" },
+  { tab: "Studio", typology: "Studio", size: "966 sq. ft. onwards." },
   { tab: "3 BHK", typology: "3 BHK", size: "4500 Sqft" },
   { tab: "4 BHK", typology: "4 BHK", size: "5500 Sqft" },
 ];

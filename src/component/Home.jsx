@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 // import bgImg from '../assets/home_banner2.jpg'
-import bgImg from '../assets/buiding.jpg'
+import bgImg from '../assets/home_banner8.png'
+// import bgImg from '../assets/buiding.jpg'
 import emailjs from '@emailjs/browser';
 import Alert from "./Alert";
 
@@ -106,7 +107,7 @@ export default function Home() {
   <img
     src={bgImg}
     alt="Project hero background"
-    className="w-full h-full object-cover object-center brightness-90 scale-105 transition-transform duration-700 ease-in-out"
+    className="w-full h-full  brightness-70  transition-transform duration-700 ease-in-out"
   />
   {/* Soft overlay for better text visibility */}
   {/* <div className="absolute inset-0 bg-gradient-to-tr from-black/60 via-black/30 to-transparent" /> */}
@@ -128,9 +129,9 @@ export default function Home() {
                     Premium Residences | World-Class Amenities | Prime Location
                   </span>
 
-                  <div className="rounded-xl ">
+                  {/* <div className="rounded-xl ">
                     <p className="text-2xl font-medium">3/4 BHK ultra luxury apartments</p>
-                  </div>
+                  </div> */}
 
                   <div className="rounded-xl ">
                     <p className="text-2xl">

@@ -1,8 +1,8 @@
 // src/components/AmenitiesGrid.jsx
 import React from "react";
 
-import cctv from "../assets/cctv_amentities.avif";
-import gym from "../assets/gym_amentities.jpg";
+import cctv from "../assets/cctv2.avif";
+import gym from "../assets/gym2.avif";
 import house_clabbing from "../assets/Amenities/house_clabbing.jpg";
 import jogging from "../assets/Amenities/jogging.jpg";
 import swimming from "../assets/summingPool_amentities.jpg";
@@ -13,7 +13,7 @@ import yoga from "../assets/Amenities/yoga.jpg";
 
 // Image-based amenities data
 const defaultAmenities = [
-  { label: "Swimming Pool", src: swimming },
+  { label: "Temperature Swimming Pool", src: swimming },
   { label: "Gym", src: gym },
   { label: "Jogging Track", src: jogging },
   { label: "Yoga Pavilion", src: yoga },
