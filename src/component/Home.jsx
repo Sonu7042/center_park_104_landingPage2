@@ -107,102 +107,102 @@ export default function Home() {
   <img
     src={bgImg}
     alt="Project hero background"
-    className="w-full h-full  brightness-70  transition-transform duration-700 ease-in-out"
+    className="w-full h-full  brightness-90  transition-transform duration-700 ease-in-out"
   />
   {/* Soft overlay for better text visibility */}
-  {/* <div className="absolute inset-0 bg-gradient-to-tr from-black/60 via-black/30 to-transparent" /> */}
+  {/* <div className="absolute inset-0 bg-gradient-to-tr from-black/10 via-black/30 to-transparent" /> */}
 </div>
 
+{/* Content Section */}
+<div className="relative flex flex-col md:flex-row items-center justify-between min-h-screen w-full pt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 gap-10 text-center md:text-left">
 
-          {/* Content */}
-          <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-4 pb-16 pt-28 sm:px-6 md:grid-cols-2 md:gap-10 lg:gap-14 lg:pt-28">
-            {/* Left card */}
-           <div className="rounded-2xl  p-5  sm:p-6 md:p-8">
-                <p className="text-sm text-white/80">At Sector 104, Gurugram</p>
+  {/* Left Text Section */}
+  <div className="rounded-2xl p-5 sm:p-6 md:p-8 text-white max-w-xl">
+    <p className="text-xl text-white">At Sector 104, Gurugram</p>
 
-                <h1 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl lg:text-4xl">
-                  Central Park 104 – Luxury Living in the Heart of Gurugram
-                </h1>
+    <h1 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
+      Central Park 104 – Luxury Living in the Heart of Gurugram
+    </h1>
 
-                <div className="mt-6 space-y-3 ">
-                  <span className="inline-block rounded-xl text-2xl ">
-                    Premium Residences | World-Class Amenities | Prime Location
-                  </span>
+    <div className="mt-6 space-y-3">
+      <span className="inline-block rounded-xl text-xl sm:text-2xl">
+        Premium Residences | World-Class Amenities | Prime Location
+      </span>
 
-                  {/* <div className="rounded-xl ">
-                    <p className="text-2xl font-medium">3/4 BHK ultra luxury apartments</p>
-                  </div> */}
+      <div className="rounded-xl">
+        <p className="text-lg sm:text-2xl">
+          Studio Apartments starting price:{" "}
+          <span className="font-semibold">₹ 2.85 Cr.</span>
+        </p>
+      </div>
+    </div>
+  </div>
 
-                  <div className="rounded-xl ">
-                    <p className="text-2xl">
-                      Studio Apartments starting price:<span className="font-semibold">₹ 2.85 Cr.</span>
-                    </p>
-                  </div>
+  {/* Right Form Section */}
+  <div className="rounded-2xl bg-white/10 p-5 sm:p-6 md:p-8 backdrop-blur-md ring-1 ring-white/15 w-full max-w-md">
+    <h2 className="text-xl font-semibold text-white mb-4">
+      Get in Touch with Us
+    </h2>
 
-                  {/* <div className="rounded-xl ">
-                    <p className="text-2xl">Book Your Visit Today</p>
-                  </div> */}
-                </div>
-              </div>
+    <form onSubmit={sendEmail} className="space-y-4">
+      <div>
+        <label htmlFor="name" className="sr-only">
+          Name
+        </label>
+        <input
+          id="name"
+          name="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+          placeholder="Enter Name"
+          className="w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white placeholder-white/70 outline-none focus:border-white/40 transition"
+        />
+      </div>
 
+      <div>
+        <label htmlFor="number" className="sr-only">
+          Number
+        </label>
+        <input
+          id="number"
+          name="number"
+          value={number}
+          onChange={(e) => setNumber(e.target.value)}
+          type="tel"
+          inputMode="tel"
+          required
+          placeholder="Enter Number"
+          className="w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white placeholder-white/70 outline-none focus:border-white/40 transition"
+        />
+      </div>
 
-            {/* Right form card */}
-            <div className="rounded-2xl bg-white/10 p-5 backdrop-blur-md ring-1 ring-white/15 sm:p-6 md:p-8 md:pt-4">
-              <h2 className="text-xl font-semibold">Get in Touch with Us</h2>
+      <div>
+        <label htmlFor="email" className="sr-only">
+          Email
+        </label>
+        <input
+          id="email"
+          name="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          type="email"
+          required
+          placeholder="Enter Email"
+          className="w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white placeholder-white/70 outline-none focus:border-white/40 transition"
+        />
+      </div>
 
-              <form onSubmit={sendEmail}  className="mt-5 space-y-4">
-                <div>
-                  <label htmlFor="name" className="sr-only">Name</label>
-                  <input
-                    id="name"
-                    name="name"
-                    value={name}
-                    onChange={(e)=> setName(e.target.value)}
-                    required
-                    placeholder="Enter Name"
-                    className="w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white placeholder-white/70 outline-none ring-0 focus:border-white/40"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="number" className="sr-only">Number</label>
-                  <input
-                    id="number"
-                    name="number"
-                    value={number}
-                    onChange={(e)=> setNumber(e.target.value)}
-                    type="tel"
-                    inputMode="tel"
-                    required
-                    placeholder="Enter Number"
-                    className="w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white placeholder-white/70 outline-none ring-0 focus:border-white/40"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="sr-only">Email</label>
-                  <input
-                    id="email"
-                    name="email"
-                    value={email}
-                    onChange={(e)=> setEmail(e.target.value)}
-                    type="email"
-                    required
-                    placeholder="Enter Email"
-                    className="w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white placeholder-white/70 outline-none ring-0 focus:border-white/40"
-                  />
-                </div>
+      <button
+        type="submit"
+        className="mt-2 inline-flex w-full items-center justify-center rounded-lg bg-[#243e84] px-5 py-3 text-sm font-medium text-white shadow-lg shadow-black/20 transition hover:bg-[#294287] focus:outline-none"
+      >
+        Submit Now
+      </button>
+    </form>
+  </div>
+</div>
 
-                <button
-                  type="submit"
-                  className="mt-2 inline-flex w-full items-center justify-center rounded-lg bg-[#243e84] px-5 py-3 text-sm font-medium text-white shadow-lg shadow-black/20 transition hover:bg-[#294287] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
-                >
-                  Submit Now
-                </button>
-              </form>
-
-
-
-            </div>
-          </div>
 
           {/* <CircularBadge /> */}
         </section>
